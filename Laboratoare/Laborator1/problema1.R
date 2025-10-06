@@ -1,1 +1,1 @@
-x <- sample(1:6, 50)
+x <- sample(1:6, 50, replace = T)
