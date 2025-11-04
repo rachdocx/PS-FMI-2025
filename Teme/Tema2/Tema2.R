@@ -22,7 +22,7 @@ S<-urnsamples(urn,size=3,replace=TRUE,ordered=TRUE)
 S<-probspace(S)
 Prob(S,apply(S[,1:3],1,function(x)length(unique(x)))==3)
 #b
-  S<-urnsamples(urn,size=3,replace=FALSE,ordered=TRUE)
+S<-urnsamples(urn,size=3,replace=FALSE,ordered=TRUE)
 S<-probspace(S)
 Prob(S,rowSums(S[,1:3]=="R")>rowSums(S[,1:3]=="B"))
 #c
